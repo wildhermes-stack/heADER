@@ -1,73 +1,132 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WildHermes</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    .header {
-      background: linear-gradient(rgba(10,20,40,0.85), rgba(10,20,40,0.95)),
-                  url('tunturikuva.jpg') center/cover no-repeat;
-      padding: 20px 5%;
-      position: fixed;
-      width: 100%;
-      top: 0;
-      z-index: 1000;
-      color: white;
-      font-family: Arial, sans-serif;
-    }
-
-    .header-container {
-      max-width: 1400px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo img {
-      height: 60px;
-    }
-
-    .nav {
-      display: flex;
-      gap: 30px;
-      align-items: center;
-    }
-
-    .nav a {
-      color: white;
-      text-decoration: none;
-      font-size: 1.1rem;
-    }
-
-    .contact-btn {
-      background: #D4AF37;
-      color: #0A1428;
-      padding: 12px 30px;
-      border-radius: 50px;
-      font-weight: bold;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Kone- ja UG-musiikin keikat, artistit ja yhteisö samassa paikassa – helposti läheltäsi koko Suomessa."
+  />
+  <title>WildHermes | UG-keikat lähelle koko Suomessa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <header class="header">
+  <header class="header" id="home">
     <div class="header-container">
-      <div class="logo">
-        <img src="logo-wildhermes.png" alt="WildHermes">
-      </div>
-      
-      <nav class="nav">
-        <a href="#">Syntytarina</a>
-        <a href="#">Palvelut</a>
-        <a href="#">Kieli</a>
-        <a href="#">Contact</a>
+      <a class="logo" href="#home" aria-label="WildHermes etusivu">
+        <img src="logo-wildhermes.png" alt="WildHermes" />
+      </a>
+
+      <nav class="nav" aria-label="Päänavigaatio">
+        <a href="#idea">Idea</a>
+        <a href="#keikat">Keikat</a>
+        <a href="#artistit">Artistit</a>
+        <a href="#contact" class="contact-btn">Ota yhteyttä</a>
       </nav>
     </div>
   </header>
 
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <p class="hero-kicker">International Underground Platform</p>
+        <h1>UG-bileiden uusi koti Suomessa</h1>
+        <p>
+          Yhdistämme kansainvälisen kone- ja underground-musiikin yhteen paikkaan,
+          jotta löydät keikat, yhteisön ja tekijät helposti – Helsingistä Utsjoelle.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#keikat">Löydä lähin keikka</a>
+          <a class="btn btn-secondary" href="#artistit">Lähetä artistiprofiili</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="idea">
+      <h2>Miksi tämä alusta?</h2>
+      <p class="section-lead">
+        UG-skenen ydin on vapaus, yhteisö ja soundi – mutta tieto tapahtumista on
+        usein hajallaan. WildHermes kokoaa promootiot, artistit ja kuulijat samaan
+        palveluun.
+      </p>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3>Yksi paikka kaikelle</h3>
+          <p>
+            Tapahtumat, kollektiivit, dj:t ja live-aktit samassa näkymässä. Ei enää
+            hajanaista tiedon etsintää eri kanavista.
+          </p>
+        </article>
+        <article class="feature-card">
+          <h3>Keikat lähelläsi</h3>
+          <p>
+            Paikkakuntasuodatus nostaa lähimmät tapahtumat esiin. Näet helposti mitä
+            tapahtuu juuri sinun kaupungissasi tai seuraavan junamatkan päässä.
+          </p>
+        </article>
+        <article class="feature-card">
+          <h3>Kansainvälinen mutta paikallinen</h3>
+          <p>
+            Tuomme kansainväliset UG-verkostot suomalaiseen arkeen: residencyt,
+            vierailijat ja paikalliset nousevat nimet samalle lavalle.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="keikat">
+      <div class="container">
+        <h2>Tulevat keikat Suomenlaajuisesti</h2>
+        <p class="section-lead">
+          Tämä on esimerkkinäkymä siitä, miten tapahtumat voidaan nostaa helposti
+          löydettäväksi paikkakunnittain.
+        </p>
+        <div class="gig-list">
+          <article class="gig-item">
+            <p class="gig-city">Helsinki</p>
+            <h3>Midnight Machine Ritual</h3>
+            <p>Ääniwalli • 14.06.2026</p>
+          </article>
+          <article class="gig-item">
+            <p class="gig-city">Tampere</p>
+            <h3>Warehouse Pulse</h3>
+            <p>Kulttuurikeskus • 21.06.2026</p>
+          </article>
+          <article class="gig-item">
+            <p class="gig-city">Oulu</p>
+            <h3>Arctic Bass Assembly</h3>
+            <p>Tehdas 48 • 03.07.2026</p>
+          </article>
+          <article class="gig-item">
+            <p class="gig-city">Kuopio</p>
+            <h3>Lake District UG Night</h3>
+            <p>Satamalava • 18.07.2026</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="artistit">
+      <h2>Artistit ja järjestäjät tervetuloa</h2>
+      <p class="section-lead">
+        Rakennamme verkostoa, jossa bookingit, yhteistuotannot ja yleisö kohtaavat.
+      </p>
+      <div class="cta-panel" id="contact">
+        <h3>Haluatko mukaan platformille?</h3>
+        <p>
+          Lähetä tiedot kollektiivistasi, tapahtumastasi tai artistiprojektistasi.
+          Autamme tekemään UG-kulttuurista helpommin löydettävää koko maassa.
+        </p>
+        <a class="btn btn-primary" href="mailto:hello@wildhermes.fi">hello@wildhermes.fi</a>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
