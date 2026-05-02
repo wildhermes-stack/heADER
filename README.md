@@ -1,9 +1,6 @@
 # heADER
 
-Landing page kansainväliselle UG-bilejärjestäjälle.
-
-## Konsepti
-Sivusto kokoaa kone- ja underground-musiikin yhteen paikkaan ja tuo keikat helposti lähelle ihmisiä koko Suomessa.
+Tämä on header-projekti.
 
 ## Käyttö
 Avaa `index.html` selaimessa tai aja paikallinen palvelin:
